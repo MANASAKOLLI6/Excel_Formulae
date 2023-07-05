@@ -1,0 +1,1752 @@
+
+<!doctype
+html>
+
+<html
+lang="en">
+
+  <head>
+
+    <!-- Required meta tags -->
+
+    <meta
+charset="utf-8">
+
+    <meta
+name="viewport"
+content="width=device-width, initial-scale=1">
+
+
+
+    <!-- Bootstrap CSS -->
+
+    <link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+crossorigin="anonymous">
+
+    <link
+href="index2.css"
+rel="stylesheet">
+
+    <link rel="shortcut icon"type="icon/css" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSamhPWYsAh7aq7gxoT4UrYMFhEAkFP6VI_CA&usqp=CAU">
+
+    <title>Excel-Formulae</title>
+
+  </head>
+
+  <body>
+
+    <!-- <figure class="text-center sticky-top p-1 mb-0  text-dark" style="background-color:   rgba(34,42,52,1) ; ">
+
+      <blockquote class="blockquote">
+
+        <p class="pt-2 mt-1" style="color: whitesmoke; font-family: 'Courier New', Courier, monospace; font-size: 1.8em;">BASIC EXCEL FORMULAE</p>
+
+      </blockquote>
+
+      <figcaption class="blockquote-footer">
+
+        Someone famous in <cite title="Source Title">Source Title</cite>
+
+      </figcaption>
+
+    </figure> -->
+
+    <div
+id="div1">
+
+
+
+      <h1
+id="h1">BASIC EXCEL FORMULAE</h1>
+
+      
+
+      </div>
+
+<div
+id="div2"
+>
+
+  
+
+    <nav
+class="navbar navbar-expand navbar-light bg-transparent">
+
+        <div
+class="container-fluid">
+
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+          </button> -->
+
+          <div
+class="collapse navbar-collapse "
+id="navbarNav"
+>
+
+            <ul
+class="navbar-nav mx-auto ">
+
+              <li
+class="nav-item mx-4 p-1">
+
+                <a
+class="nav-link "
+aria-current="page"
+href="#sum">SUM</a>
+
+              </li>
+
+              <li
+class="nav-item mx-4 p-1"
+>
+
+                <a
+class="nav-link"
+href="#average">AVERAGE</a>
+
+              </li>
+
+              <li
+class="nav-item  mx-4 p-1">
+
+                <a
+class="nav-link"
+href="#if">IF</a>
+
+              </li>
+
+              <li
+class="nav-item mx-4 p-1">
+
+                <a
+class="nav-link"
+href="#count">COUNT</a>
+
+              </li>
+
+              <li
+class="nav-item mx-4 p-1">
+
+                <a
+class="nav-link"
+href="#logical">LOGICAL OPERATORS</a>
+
+              </li>
+
+              <li
+class="nav-item mx-4 p-1">
+
+                <a
+class="nav-link"
+href="#is">IS</a>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+      <nav
+class="navbar navbar-expand navbar-light bg-transparent">
+
+        <div
+class="container-fluid">
+
+          <div
+class="collapse navbar-collapse mar1"
+id="navbarNav"
+>
+
+            <ul
+class="navbar-nav mx-auto "
+>
+
+              
+
+              <li
+class="nav-item ms-4  p-1 ">
+
+                <a
+class="nav-link"
+href="#max-min">MAX-MIN</a>
+
+              </li>
+
+              <li
+class="nav-item mx-4 p-1">
+
+                <a
+class="nav-link"
+href="#lookup">LOOKUP</a>
+
+              </li>
+
+              <li
+class="nav-item mx-4 p-1 ">
+
+                <a
+class="nav-link"
+href="#filter">FILTER</a>
+
+              </li>
+
+        
+
+              <li
+class="nav-item  mx-4 p-1">
+
+                <a
+class="nav-link"
+href="#index">INDEX</a>
+
+              </li>
+
+              <li
+class="nav-item mx-4 p-1"
+>
+
+                <a
+class="nav-link"
+href="#match">MATCH</a>
+
+              </li>
+
+              <li
+class="nav-item mx-4 p-1">
+
+                <a
+class="nav-link"
+href="#row-col">ROW & COLUMN</a>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+      <nav
+class="navbar navbar-expand navbar-light bg-transparent">
+
+        <div
+class="container-fluid">
+
+          <div
+class="collapse navbar-collapse mar2"
+id="navbarNav">
+
+            <ul
+class="navbar-nav mx-auto "
+style="width: auto;"
+>
+
+              
+
+              
+
+              
+
+              <li
+class="nav-item mx-4 p-1 ">
+
+                <a
+class="nav-link"
+href="#boolean">BOOLEAN</a>
+
+              </li>
+
+              
+
+              <li
+class="nav-item mx-4 p-1">
+
+                <a
+class="nav-link"
+href="#trim-clean">TRIM-CLEAN</a>
+
+              </li>
+
+              <li
+class="nav-item mx-4 p-1 ">
+
+                <a
+class="nav-link"
+href="#left-right">LEFT-RIGHT</a>
+
+              </li>
+
+              <li
+class="nav-item mx-4 p-1 "
+>
+
+                <a
+class="nav-link"
+href="#find-search">FIND &SEARCH</a>
+
+              </li>
+
+              <li
+class="nav-item  mx-4 p-1">
+
+                <a
+class="nav-link"
+href="#eomonth">EOMONTH</a>
+
+              </li>
+
+              <li
+class="nav-item  mx-4 p-1"
+>
+
+                <a
+class="nav-link"
+href="#concat">CONCAT</a>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+      <nav
+class="navbar navbar-expand navbar-light bg-transparent">
+
+        <div
+class="container-fluid">
+
+          <div
+class="collapse navbar-collapse mar2"
+id="navbarNav"
+>
+
+            <ul
+class="navbar-nav mx-auto "
+>
+
+              <li
+class="nav-item mx-4 p-1">
+
+                <a
+class="nav-link"
+href="#text">TEXT</a>
+
+              </li>
+
+              <li
+class="nav-item  mx-4 p-1">
+
+                <a
+class="nav-link"
+href="#mid">MID</a>
+
+              </li>
+
+              <li
+class="nav-item mx-4 p-1">
+
+                <a
+class="nav-link"
+href="#exact">EXACT</a>
+
+              </li>
+
+              <li
+class="nav-item mx-4 p-1"
+>
+
+                <a
+class="nav-link"
+href="#networkdays">NETWORKDAYS</a>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+      <div>
+            <h3 id="h3"> SOME INTERESTING SHORTCUTS</h3>
+      </div>
+    <p class="p1"><b class="sh">Paste Special </b>: Ctrl + Alt + V</p>
+    <p class="p1"><b class="sh">Apply/removes filter </b>: Ctrl + shift + L</p>
+    <p class="p1"><b class="sh">Current Date </b>: Ctrl + ;</p>
+    <p class="p1"><b class="sh">Autofit row height</b>: Alt + H + O + A</p>
+    <p class="p1"><b class="sh">Autofit col width </b>: Alt + H + O + I</p>
+    <p class="p1"><b class="sh">Copy value from above cell </b>: Ctrl + '</p>
+    <p class="p1"><b class="sh">Format cells </b>: Ctrl + 1</p>
+    <p class="p1"><b class="sh">Current Time </b>: Ctrl + Shift + ;</p>
+    <p class="p1"><b class="sh">Visual Basic Editor </b>: Alt + F11</p>
+    <p class="p1"><b class="sh">Remove Duplicates </b>: Alt + A + M</p>
+    <p class="p1"><b class="sh">Current Date </b>: Ctrl + ;</p>
+    <p class="p1"><b class="sh">To Cut </b>: Ctrl + X</p>
+    <p class="p1"><b class="sh">Insert Hyper link</b>: Ctrl + K</p>
+    <p class="p1"><b class="sh">To open a file </b>: Ctrl + F12</p>
+    <p class="p1"><b class="sh">Delete Row/Col/cell </b>: Ctrl + -</p>
+    <p class="p1"><b class="sh">Save As</b>: F12</p>
+    <p class="p1"><b class="sh">Hide row </b>: Ctrl + 9</p>
+    <p class="p1"><b class="sh">Unhide row </b>: Ctrl + shift + 9</p>
+    <p class="p1"><b class="sh">Hide Col </b>: Ctrl + 0</p>
+    <p class="p1"><b class="sh">Select entire row </b>: Shift + spacebar</p>
+    <p class="p1"><b class="sh">Select entire col </b>: Ctrl + spacebar</p>
+    <p class="p1"><b class="sh">Replace </b>: Ctrl + H</p>
+    <p class="p1"><b class="sh">Task manager</b>: Ctrl + shift + Esc</p>
+    <p class="p1"><b class="sh">File explorer</b>: win + E</p>
+    <p class="p1"><b class="sh">Screen keyboard </b>: Ctrl + win + o</p>
+    <p class="p1"><b class="sh">Create new folder</b>: Ctrl + shift + N</p>
+    <p class="p1"><b class="sh">Rename</b>: F2</p>
+    <p class="p1"><b class="sh">Undo last action </b>: Ctrl + Z</p>
+    <p class="p1"><b class="sh">Current Date </b>: Ctrl + ;</p>
+    <p class="p1"><b class="sh">Hide/show excel ribbons </b>: Ctrl + F1</p>
+    <p class="p1"><b class="sh">Go to spl</b>: Ctrl + G</p>
+    <p class="p1"><b class="sh">Displays shortcut menu </b>: shift + F10</p>
+    <p class="p1"><b class="sh">Insert pivot </b>: Alt + N + V</p>
+    <p class="p1"><b class="sh">Insert function dialog box </b>: shift + F3</p>
+
+    </div>
+
+      <div id="sum">
+        <div style="position: relative; float: right; margin: 6px 6px;">
+        <a href="#" style="text-decoration: none; border: 1.5px solid black;
+                    border-radius: 1.5em; padding: 3px; color:blue">X
+        </a></div>
+        <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+                <p>
+                    <h6>SUM: Adds all the numbers in a range of cells</h6>
+                    <p class="s1">Syntax:  =SUM(number1,[number2],..)</p>
+                    <p><b class="srtcut">Shortcut: Alt + =</b>
+</p>
+                    <h6>SUMIF: Adds the cells specified by a given condition or criteria</h6>
+                    <p class="s1">Syntax: =SUMIF (range, criteria,[ sum_range])</p>
+                    <h6>SUMIFS: Adds the cells specified by a given set of conditions or criteria</h6>
+                    <p class="s1">Syntax: =SUMIFS(sum_range,criteria_range1,criteria1,..)</p>
+                </p>
+            </div>
+            </div>
+              <div id="average">
+           
+                  <div style="position: relative; float: right; margin: 6px 6px;">
+                        <a href="#" style="text-decoration: none; border: 1.5px solid black;
+                        border-radius: 1.5em; padding: 3px;">X</a></div>
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+              class="p-4">
+                    <p>
+                        <h6>AVERAGE: Returns the average(Arithemetic mean)of its arguments</h6>
+                        <p class="s1">Syntax: =AVERAGE (number1, [number2], ...)</p>
+                        <p><b class="srtcut">Shortcut: Alt + h + u + a</b>
+</p>
+                        <h6>AVERAGEIF: Finds average for the cells specified by a given condition or criteria</h6>
+                        <p class="s1">Syntax: =AVERAGEIF (range, criteria,[average_range])</p>
+                        <h6>AVERAGEIFS: Finds average for the cells specified by a given set of conditions or criteria</h6>
+                        <p class="s1">Syntax: =AVERAGEIFS(average_range,criteria_range1,criteria1,..)</p>
+                    </p>
+            </div>
+                </div>
+              </div>
+
+    <div id="if">
+      <div style="position: relative; float: right; margin: 6px 6px;">
+          <a href="#" style="text-decoration: none; border: 1.5px solid black;
+          border-radius: 1.5em; padding: 3px;">X</a></div>
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+      <p>
+          <h6>IF: Checks whether a condition is met, and returns one value if true and another value if false.</h6>
+          <p class="s1">Syntax: =IF(logical_test, value_if_true, [value_if_false])</p>
+          <h6>IFERROR: To trap and handle errors in a formula.
+</h6>
+          <li class="li1">If an error exists - returns a value we specified</li>
+      <li class="li1">No error - returns the result of the formula</li>
+          <p class="s1">Syntax: =IFERROR(value, value_if_error)</p>
+          <h6>IFNA: Returns the value we specify if the expression resolves to #N/A, otherwise returns the result of the expression</h6>
+          <p class="s1">Syntax: =IFNA(value, value_if_na)</p>
+      </p>
+</div>
+  </div>
+
+  <div id="count">
+
+
+
+    <div
+style="position: relative; float: right; margin: 6px 6px;">
+
+
+
+        <a
+href="#"
+style="text-decoration: none; border: 1.5px solid black;
+
+
+
+        border-radius: 1.5em; padding: 3px;">X
+
+
+
+</a></div>
+
+
+
+
+
+
+
+    <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+
+
+
+    <p>
+
+
+
+        <h6
+>COUNT: Counts the no.of cells in a range that contain numbers</h6>
+
+
+
+        <p class="s1"
+>Syntax: =COUNT(value1, [value2], ...)</p>
+
+
+
+        <h6
+>COUNTA: Counts the no.of cells in a range that are not empty</h6>
+
+
+
+        <p class="s1"
+>Syntax: =COUNTA(value1, [value2], ...)</p>
+
+
+
+        <h6
+>COUNTIF: Counts the no.of cells within a range that meet the given condition</h6>
+
+
+
+        <p class="s1"
+>Syntax:  =COUNTIF(range,criteria)</p>
+
+
+
+        <h6
+>COUNTIFS: Counts the no.of cells specified by a given set of conditions</h6>
+
+
+
+        <p class="s1"
+>Syntax: =COUNTIFS(criteria_range1, criteria1, [criteria_range2, criteria2]…)</p>
+
+
+
+    </p>
+
+
+
+</div>
+
+
+
+</div>
+
+<div
+id="logical">
+
+
+
+  <div
+style="position: relative; float: right; margin: 6px 6px;">
+
+
+
+      <a
+href="#"
+style="text-decoration: none; border: 1.5px solid black;
+
+
+
+      border-radius: 1.5em; padding: 3px;">X
+
+
+
+</a></div>
+
+
+
+  <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+
+
+
+  <p>
+
+
+
+      <h6
+>OR: returns True if at least one of the criteria evaluates to true. If all the arguments evaluate as False, then returns False</h6>
+
+
+
+      <p class="s1"
+>Syntax: =OR(logical1, [logical2], …)</p>
+
+
+
+      <h6
+>AND: Check whether all arguments are true, and returns true if all arguments are true</h6>
+
+
+
+      <p class="s1"
+>Syntax: =AND(logical1, [logical2]…)</p>
+
+
+
+      <h6
+>NOT: Changes false to true,or true to false</h6>
+
+
+
+      <p class="s1"
+>Syntax: =NOT(logical)</p>
+
+
+
+  </p>
+
+
+
+</div>
+
+
+
+</div>
+
+<div
+id="is">
+
+
+
+  <div
+style="position: relative; float: right; margin: 6px 6px;">
+
+
+
+      <a
+href="#"
+style="text-decoration: none; border: 1.5px solid black;
+
+
+
+      border-radius: 1.5em; padding: 3px;">X
+
+
+
+</a></div>
+
+
+
+
+
+
+
+  <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+
+
+
+  <p>
+
+
+
+      <h6
+>ISTEXT: Checks whether a value is text, and returns true or false</h6>
+
+
+
+      <p class="s1"
+>Syntax: =ISTEXT(value)</p>
+
+
+
+      <h6
+>ISBLANK: Checks whether a reference is to an empty cell, and returns true or false</h6>
+
+
+
+      <p class="s1"
+>Syntax: =ISBLANK(value)</p>
+
+
+
+  </p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<div
+id="max-min">
+
+
+
+  <div
+style="position: relative; float: right; margin: 6px 6px;">
+
+
+
+      <a
+href="#"
+style="text-decoration: none; border: 1.5px solid black;
+
+
+
+      border-radius: 1.5em; padding: 3px;">X
+
+
+
+</a></div>
+
+
+
+
+
+
+
+  <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+
+
+
+  <p>
+
+
+
+      <h6
+>MAX:  Returns the largest value in a set of values. Ignores logical values and text</h6>
+
+
+
+      <p class="s1"
+>Syntax: =MAX(number1, [number2], ...)</p>
+
+
+
+      <h6
+>MIN: Returns the smallest value in a set of values. Ignores logical values and text</h6>
+
+
+
+      <p class="s1"
+>Syntax: =MIN(number1, [number2], ...)</p>
+
+
+
+  </p>
+
+
+
+</div>
+
+
+
+</div>
+
+<div
+id="lookup">
+
+
+
+  <div
+style="position: relative; float: right; margin: 6px 6px;">
+
+
+
+      <a
+href="#"
+style=" text-decoration: none; border: 1.5px solid black;
+
+
+
+      border-radius: 1.5em; padding: 3px;">X</i>
+
+
+
+</a></div>
+
+
+
+
+
+
+
+  <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+
+
+
+  <p>
+
+
+
+
+
+
+
+      <h6
+>HLOOKUP:  Can locate and retrieve a value from data in a horizontal table</h6>
+
+
+
+      <p class="s1"
+>Syntax: =HLOOKUP(lookup_value, table_array, row_index_num, [range_lookup])</p>
+
+
+
+      <h6
+>VLOOKUP: when you need to find things in a table or a range by row</h6>
+
+
+
+      <p class="s1"
+>Syntax: =VLOOKUP(lookup_value, table_array, row_index_num, [range_lookup])</p>
+
+
+
+      <p
+class="lk">=LOOKUP(What you want to look up, where you want to look for it, the column number in the range containing the value
+ to return, return an Approximate or Exact match -indicated as 1/TRUE, or 0/FALSE).</p>
+
+
+
+     
+
+
+
+  </p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div
+id="filter">
+
+
+
+  <div
+style="position: relative; float: right; margin: 6px 6px;">
+
+
+
+      <a
+href="#"
+style=" text-decoration: none; border: 1.5px solid black;
+
+
+
+      border-radius: 1.5em; padding: 3px;">X
+
+
+
+</a></div>
+
+
+
+  <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+
+
+
+  <p>
+
+
+
+      <h6
+>Filter: Filter a range of data based on criteria we define</h6>
+
+
+
+      <p class="s1"
+>Syntax: =FILTER(array, include, [if_empty])</p>
+
+
+
+  </p>
+
+  <p><b class="srtcut">Shortcut: Ctrl + Shift + L</b>
+  </p>
+
+</div>
+
+
+
+</div>
+
+<div
+id="index">
+
+
+
+  <div
+style="position: relative; float: right; margin: 6px 6px;">
+
+
+
+      <a
+href="#"
+style="text-decoration: none; border: 1.5px solid black;
+
+
+
+      border-radius: 1.5em; padding: 3px;">X
+
+
+
+</a></div>
+
+
+
+
+
+
+
+  <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+
+
+
+  <p>
+
+
+
+      <h6
+>Index: Returns the value at a given location in a range or array.</h6>
+
+
+
+      <p class="s1"
+>Syntax: =INDEX(array, row_num, [col_num], [area_num])</p>
+
+
+
+  </p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<div
+id="match">
+
+
+
+  <div
+style="position: relative; float: right; margin: 6px 6px;">
+
+
+
+      <a
+href="#"
+style=" text-decoration: none; border: 1.5px solid black;
+
+
+
+      border-radius: 1.5em; padding: 3px;">X
+
+
+
+</a></div>
+
+
+
+
+
+
+
+  <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+
+
+
+  <p>
+
+
+
+      <h6
+>Match: Locate the position of a lookup value in a row, column, or table.</h6>
+
+
+
+      <p class="s1"
+>Syntax: =MATCH(lookup_value, lookup_array, [match_type])</p>
+
+
+
+  </p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<div
+id="row-col">
+
+
+
+  <div
+style="position: relative; float: right; margin: 6px 6px;">
+
+
+
+      <a
+href="#"
+style=" text-decoration: none; border: 1.5px solid black;
+
+
+
+      border-radius: 1.5em; padding: 3px;">X
+
+
+
+</a></div>
+
+
+
+  <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+
+
+
+  <p>
+
+
+
+      <h6
+>Row: Returns the row number of a reference</h6>
+
+
+
+      <p class="s1"
+>Syntax: =ROW([reference])</p>
+
+
+
+      <h6
+>Column: Returns the column number of a reference</h6>
+
+
+
+      <p class="s1"
+>Syntax: =COLUMN([reference])</p>
+
+
+
+  </p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<div
+id="boolean">
+
+
+
+  <div
+style="position: relative; float: right; margin: 6px 6px;">
+
+
+
+      <a
+href="#"
+style=" text-decoration: none; border: 1.5px solid black;
+
+
+
+      border-radius: 1.5em; padding: 3px;">X
+
+
+
+</a></div>
+
+
+
+
+
+
+
+  <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+
+
+
+  <p>
+
+
+
+      <h6
+>True: Returns the logical value TRUE</h6>
+
+
+
+      <p class="s1"
+>Syntax: =TRUE()</p>
+
+
+
+      <h6
+>False: Returns the logical value FALSE</h6>
+
+
+
+      <p class="s1"
+>Syntax: =FALSE()</p>
+
+
+
+  </p>
+
+
+
+</div>
+
+
+
+</div>
+
+<div
+id="trim-clean">
+
+
+
+  <div
+style="position: relative; float: right; margin: 6px 6px;">
+
+
+
+      <a
+href="#"
+style="text-decoration: none; border: 1.5px solid black;
+
+
+
+      border-radius: 1.5em; padding: 3px;">X
+
+
+
+</a></div>
+
+
+
+
+
+
+
+  <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+
+
+
+  <p>
+
+
+
+      <h6
+>Trim: Removes the extra spaces from the start and end of the cell value.
+</h6>
+
+
+
+      <p class="s1"
+>Syntax: =TRIM(text)</p>
+
+
+
+      <h6
+>Clean: Removes all nonprintable characters from text</h6>
+
+
+
+      <p class="s1"
+>Syntax: =CLEAN(text)</p>
+
+
+
+  </p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<div
+id="left-right">
+
+
+
+  <div
+style="position: relative; float: right; margin: 6px 6px;">
+
+
+
+      <a
+href="#"
+style=" text-decoration: none; border: 1.5px solid black;
+
+
+
+      border-radius: 1.5em; padding: 3px;">X
+
+
+
+</a></div>
+
+
+
+
+
+
+
+  <p>
+
+
+
+      <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+
+
+
+      <h6
+>Left: Extracts a given number of characters from the left side of a supplied text string.</h6>
+
+
+
+      <p class="s1"
+>Syntax: =LEFT(text,[num_chars])</p>
+
+
+
+      <h6
+>Right: Extracts a given number of characters from the left side of a supplied text string.</h6>
+
+
+
+      <p class="s1"
+>Syntax: =RIGHT(text,[num_chars])</p>
+
+
+
+  </p>
+
+
+
+</div>
+
+
+
+</div>
+
+<div
+id="find-search">
+
+
+
+ 
+
+
+
+  <div
+style="position: relative; float: right; margin: 6px 6px;">
+
+
+
+      <a
+href="#"
+style=" text-decoration: none; border: 1.5px solid black;
+
+
+
+      border-radius: 1.5em; padding: 3px;">X
+
+
+
+</a></div>
+
+
+
+
+
+
+
+  <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+
+
+
+  <p>
+
+
+
+      <h6
+>Find: Get location substring in a string(case sensitive)</h6>
+
+
+
+      <p class="s1"
+>Syntax: =FIND(find_text, within_text, [start_num])</p>
+<p><b class="srtcut">Shortcut: Ctrl + F</b>
+</p>
+
+
+
+
+      <h6
+>Search: Get the location of substring in a string(not case sensitive)</h3>
+
+
+
+      <p class="s1"
+>Syntax: =SEARCH(find_text, within_text, [start_num])</p>
+
+<p><b class="srtcut">Shortcut: Alt + Q</b>
+</p>
+
+  </p>
+
+
+
+</div>
+
+
+
+</div>
+
+<div
+id="eomonth">
+
+
+
+  <div
+style="position: relative; float: right; margin: 6px 6px;">
+
+
+
+      <a
+href="#"
+style=" text-decoration: none; border: 1.5px solid black;
+
+
+
+      border-radius: 1.5em; padding: 3px;">X
+
+
+
+</a></div>
+
+
+
+  <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+
+
+
+  <p>
+
+
+
+      <h6
+>EOMONTH: Get last day of month n months in future or past</h6>
+
+
+
+      <p class="s1"
+>Syntax: =EOMONTH (start_date, months)</p>
+
+
+
+  </p>
+
+
+
+</div>
+
+
+
+</div>
+
+<div
+id="concat">
+
+
+
+  <div
+style="position: relative; float: right; margin: 6px 6px;">
+
+
+
+      <a
+href="#"
+style=" text-decoration: none; border: 1.5px solid black;
+
+
+
+      border-radius: 1.5em; padding: 3px;">X
+
+
+
+</a></div>
+
+
+
+  <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+
+
+
+  <p>
+
+
+
+      <h6
+>Concat: combines the text from multiple ranges and/or strings, but it doesn't provide delimiter or IgnoreEmpty arguments.</h6>
+
+
+
+      <p class="s1"
+>Syntax: =CONCAT(text1, [text2],…)</p>
+
+
+
+  </p>
+
+
+
+</div>
+
+
+
+</div>
+
+<div
+id="text">
+
+
+
+  <div
+style="position: relative; float: right; margin: 6px 6px;">
+
+
+
+      <a
+href="#"
+style=" text-decoration: none; border: 1.5px solid black;
+
+
+
+      border-radius: 1.5em; padding: 3px;">X
+
+
+
+</a></div>
+
+
+
+  <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+
+
+
+  <p>
+
+
+
+      <h6
+>TEXTJOIN: Join text values with a delimiter</h6>
+
+
+
+      <p class="s1"
+>Syntax: =TEXTJOIN(delimiter, ignore_empty, text1, [text2], ...)</p>
+
+
+
+      <h6
+>TEXT: Convert a number to text in a number format</h6>
+
+
+
+      <p class="s1"
+>Syntax: =TEXT(value, format_text)</p>
+
+
+
+  </p>
+
+
+
+</div>
+
+
+
+</div>
+
+<div
+id="mid">
+
+
+
+  <div
+style="position: relative; float: right; margin: 6px 6px;">
+
+
+
+      <a
+href="#"
+style=" text-decoration: none; border: 1.5px solid black;
+
+
+
+      border-radius: 1.5em; padding: 3px;">X
+
+
+
+</a></div>
+
+
+
+  <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+
+
+
+  <p>
+
+
+
+      <h6
+>MID: Extracts a given number of characters from the middle of a supplied text string.</h6>
+
+
+
+      <p class="s1"
+>Syntax: =MID(text, start_num, num_chars)</p>
+
+
+
+  </p>
+
+
+
+</div>
+
+
+
+</div>
+
+<div
+id="exact">
+
+
+
+  <div
+style="position: relative; float: right; margin: 6px 6px;">
+
+
+
+      <a
+href="#"
+style=" text-decoration: none; border: 1.5px solid black;
+
+
+
+      border-radius: 1.5em; padding: 3px;">X
+
+
+
+</a></div>
+
+
+
+  <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+
+
+
+  <p>
+
+
+
+      <h6
+>EXACT: Shows whether both data are an exact match or not.</h6>
+
+
+
+      <p class="s1"
+>Syntax: =EXACT (text1,text2)</p>
+
+
+
+  </p>
+
+
+
+</div>
+
+
+
+</div>
+
+<div
+id="networkdays">
+
+
+
+  <div
+style="position: relative; float: right; margin: 6px 6px;">
+
+
+
+      <a
+href="#"
+style=" text-decoration: none; border: 1.5px solid black;
+
+
+
+      border-radius: 1.5em; padding: 3px;">X
+
+
+
+</a></div>
+
+
+
+  <div
+style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 0.7em;"
+class="p-4">
+
+
+
+  <p>
+
+
+
+      <h6
+>NetworkDays: To get the number of business days between dates.</h6>
+
+
+
+      <p class="s1"
+>Syntax: =NETWORKDAYS(start_date,end_date,holidays)</p>
+
+
+
+  </p>
+
+
+
+</div>
+
+
+
+</div>
+
+    <script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
+
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!--
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+ crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+ crossorigin="anonymous"></script>
+
+    -->
+
+  </body>
+
+</html>
